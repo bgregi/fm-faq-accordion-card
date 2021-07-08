@@ -21,10 +21,44 @@ body {
     font-family: Kumbh Sans, sans-serif ;
     font-size: 12px;
     font-weight: 400;
+    box-sizing: border-box;
+    margin: 40% 5% 10% 5%;
+    background-image: linear-gradient($bg-violet, $bg-blue);
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 30px 70px rgba(0, 0, 0, 0.4);
+}
+
+.images {
+    margin-left: 5%;
+    height: 130px;
+
+}
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-img {
+    overflow: visible;
+    position: relative;
+    bottom: 110px;
+    width: 85%;
+}
+
+.bg-mobile {
+    position: relative;
+    bottom: 200px;
+    width: 75%;
+    left: 9%;
 }
 
 h1 {
     color: blue;
+    text-align: center;
 }
 
 
@@ -34,7 +68,11 @@ h1 {
 
 
 
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 20px;
 
 
-.attribution { font-size: 11px; text-align: center; }
+}
 .attribution a { color: hsl(228, 45%, 44%); }
