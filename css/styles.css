@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url(../fonts/KumbhSans-Regular.ttf);
+}
+body {
+  font-family: Kumbh Sans, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h1 {
+  color: blue;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=styles.css.map */

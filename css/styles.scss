@@ -1,0 +1,40 @@
+// Text
+$ptx-blue: hsl(238, 29%, 16%);
+$ptx-red: hsl(14, 88%, 65%);
+$ntx-v-dark-blue: hsl(237, 12%, 33%);
+$ntx-dark-blue: hsl(240, 6%, 50%);
+
+// Background gradient:
+$bg-violet: hsl(273, 75%, 66%);
+$bg-blue: hsl(240, 73%, 65%);
+
+// Dividers
+$dv-blue: hsl(240, 5%, 91%);
+
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url(../fonts/KumbhSans-Regular.ttf);
+}
+
+
+body {
+    font-family: Kumbh Sans, sans-serif ;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h1 {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
