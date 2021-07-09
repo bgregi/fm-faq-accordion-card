@@ -7,7 +7,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   box-sizing: border-box;
-  margin: 40% 5% 10% 5%;
+  margin: -20% 5% 5% 5%;
   background-image: linear-gradient(#af67e9, #6565e7);
 }
 
@@ -15,11 +15,8 @@ main {
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 30px 70px rgba(0, 0, 0, 0.4);
-}
-
-.images {
-  margin-left: 5%;
-  height: 130px;
+  box-sizing: border-box;
+  padding: 35% 0 10% 0;
 }
 
 .desktop-img {
@@ -27,22 +24,39 @@ main {
 }
 
 .mobile-img {
-  overflow: visible;
+  width: 90%;
+  padding-right: 10%;
+  padding-bottom: 25px;
   position: relative;
-  bottom: 110px;
-  width: 85%;
-}
-
-.bg-mobile {
-  position: relative;
-  bottom: 200px;
-  width: 75%;
-  left: 9%;
+  top: 130px;
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 81%;
+  background-position-x: center;
+  background-position-y: 90%;
 }
 
 h1 {
-  color: blue;
+  font-size: 2.2rem;
   text-align: center;
+  padding-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0 30px;
+}
+
+li {
+  border-bottom: solid #e7e7e9 1px;
+}
+
+h3 {
+  color: #4a4b5e;
+}
+
+p {
+  color: #787887;
 }
 
 .attribution {
