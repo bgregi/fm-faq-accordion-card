@@ -20,7 +20,7 @@ main {
   padding: 35% 0 10% 0;
 }
 
-.desktop-img {
+.desktop-img, .desktop-box {
   display: none;
 }
 
@@ -118,27 +118,38 @@ input:checked ~ p {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    height: 80vh;
   }
 
   .mobile-img {
     display: none;
   }
 
-  .desktop-img {
+  .desktop-imgs {
+    position: relative;
+    top: 150px;
+  }
+  .desktop-imgs .desktop-img {
+    display: block;
+    width: 25%;
+  }
+  .desktop-imgs .desktop-box {
     display: block;
     position: relative;
+    bottom: 50px;
+    width: 100px;
   }
 
   main {
-    padding: 0;
-    width: 60%;
+    padding: 0 0 0 200px;
+    position: relative;
+    bottom: 250px;
+    z-index: -1;
   }
 }
 
