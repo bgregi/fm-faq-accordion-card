@@ -59,25 +59,11 @@ h1 {
 }
 
 .list {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .q-a {
     border-bottom: solid $dv-blue 1px;
-}
-
-.question {
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    img {
-        width: 10px;
-        height: 7px;
-        position: relative;
-        right: 0;
-    }
 }
 
 input {
@@ -88,13 +74,31 @@ input {
 label {
     color: $ntx-v-dark-blue;
     font-size: .8rem;
+    cursor: pointer;
+}
+
+.question {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    img {
+        width: 10px;
+        height: 7px;
+        position: relative;
+        right: 0;
+        transition: all .5s;
+    }
 }
 
 p {
     color: $ntx-dark-blue;
     margin: 0;
-    padding: 0 0 15px 0;
-    display: none;
+    padding: 0;
+    max-height: 0;
+    transition: all .5s;
+    overflow: hidden;
 }
 
 .attribution {
@@ -103,5 +107,24 @@ p {
     margin-top: 20px;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: $ptx-red
+}
+
+input:checked {
+    + label {
+        color: black;
+        font-weight: bold;
+
+        img {
+            transform: rotate(180deg);
+            transition: all .5s;
+        }
+    }
+    ~ p {
+        max-height: 100vh;
+        transition: all .5s;
+        padding-bottom: 15px;
+
+    }
+
 }
