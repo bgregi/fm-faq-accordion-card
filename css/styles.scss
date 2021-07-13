@@ -16,6 +16,8 @@ $dv-blue: hsl(240, 5%, 91%);
     src: url(../fonts/KumbhSans-Regular.ttf);
 }
 
+// MOBILE
+
 body {
     font-family: Kumbh Sans, sans-serif;
     font-size: 12px;
@@ -23,6 +25,7 @@ body {
     box-sizing: border-box;
     margin: -20% 5% 5% 5%;
     background-image: linear-gradient($bg-violet, $bg-blue);
+    background-repeat: no-repeat;
 }
 
 main {
@@ -127,4 +130,41 @@ input:checked {
 
     }
 
+}
+
+// DESKTOP
+
+@media only screen and (min-width: 630px) {
+    body {
+        margin: 0;
+        padding: 50px 75px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+        position: relative;
+    }
+
+
+    main {
+        padding: 0;
+        width: 60%;
+    }
+    
+    
+    
 }

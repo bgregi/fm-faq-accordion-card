@@ -9,6 +9,7 @@ body {
   box-sizing: border-box;
   margin: -20% 5% 5% 5%;
   background-image: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
 }
 
 main {
@@ -108,6 +109,37 @@ input:checked ~ p {
   max-height: 100vh;
   transition: all 0.5s;
   padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 630px) {
+  body {
+    margin: 0;
+    padding: 50px 75px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    position: relative;
+  }
+
+  main {
+    padding: 0;
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
