@@ -137,16 +137,21 @@ input:checked {
 @media only screen and (min-width: 630px) {
     body {
         margin: 0;
-        padding: 50px 75px;
+        padding: 10% 20%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
 
     .content {
-        height: 80vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 10px 30px 70px rgba(0, 0, 0, 0.4);
     }
 
     .mobile-img {
@@ -154,31 +159,61 @@ input:checked {
     }
 
     .desktop-imgs {
-        position: relative;
-        top: 150px;
+        height: 70vh;
+        width: 50%;
+        overflow: hidden;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position-y: -50px;
+        background-position-x: -220px;
+        background-clip: border-box;
     
         .desktop-img {
             display: block;
-            // left: 400px;
-            // top: 400px;
-            width: 25%;
+            position: relative;
+            top: 75px;
+            right: 50px;
+            height: 20vw;
+            margin: 0;
+            overflow: hidden;
         }
 
-        .desktop-box {
-            display: block;
-            position: relative;
-            bottom: 50px;
-            width: 100px;
-        }
+    }
+
+    .desktop-box {
+        display: block;
+        position: relative;
+        top: 10%;
+        right: 52%;
+        width: 15%;
+        overflow: visible;
     }
 
     main {
-        padding: 0 0 0 200px;
-        position: relative;
-        bottom: 250px;
-        z-index: -1;
+        padding: 0;
+        width: 50%;
+        // position: relative;
+        // bottom: 250px;
+        background-color: initial;
+        box-shadow: none;
+        border-radius: unset;
     }
     
+    h1 {
+        text-align: left;
+        padding: 0 0 40px 0;
+    }
+
+    .list {
+        padding: 0 80px 20px 0;
+    }
+
+    .attribution {
+        position: absolute;
+        top: 90%;
+
+    }
     
     
 }
