@@ -164,9 +164,9 @@ input:checked {
         overflow: hidden;
         background-image: url(../images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
-        background-size: 150%;
-        background-position-y: -50px;
-        background-position-x: -220px;
+        background-size: 180%;
+        background-position-y: -120px;
+        background-position-x: -330px;
         background-clip: border-box;
     
         .desktop-img {
@@ -186,15 +186,13 @@ input:checked {
         position: relative;
         top: 10%;
         right: 52%;
-        width: 15%;
+        width: 18%;
         overflow: visible;
     }
 
     main {
         padding: 0;
         width: 50%;
-        // position: relative;
-        // bottom: 250px;
         background-color: initial;
         box-shadow: none;
         border-radius: unset;
@@ -209,10 +207,14 @@ input:checked {
         padding: 0 80px 20px 0;
     }
 
+    .question:hover {
+        color: $ptx-red;
+    }
+
     .attribution {
         position: absolute;
         top: 90%;
-
+        z-index: -1;
     }
     
     
