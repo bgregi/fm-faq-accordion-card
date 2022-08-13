@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/bgregi/faq-accordion-card](https://github.com/bgregi/faq-accordion-card)
-- Live Site URL: [https://bgregi.github.io/faq-accordion-card/](https://bgregi.github.io/faq-accordion-card/)
+- Solution URL: [https://github.com/bgregi/fm-faq-accordion-card](https://github.com/bgregi/fm-faq-accordion-card)
+- Live Site URL: [https://bgregi.github.io/fm-faq-accordion-card/](https://bgregi.github.io/fm-faq-accordion-card/)
 
 ## My process
 
